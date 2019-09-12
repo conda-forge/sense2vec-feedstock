@@ -41,7 +41,7 @@ about:
   home: https://github.com/explosion/sense2vec
   license: MIT
   license_family: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
   summary: 'word2vec with NLP-specific tokens'
   dev_url: https://github.com/explosion/sense2vec
 
