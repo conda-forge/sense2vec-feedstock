@@ -1,5 +1,5 @@
 {% set name = "sense2vec" %}
-{% set version = "1.0.0a1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/explosion/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4e64cc3834c902087ca83a88568f0769974a2cc4cd63a31d45ae29c4d7bf8792
+  sha256: 76947ffc6d7a73a4856a6faca84fb49c01665f6a1c27a4064a80c1ce99cb72a4
 
 build:
   number: 0
