@@ -1,5 +1,5 @@
 {% set name = "sense2vec" %}
-{% set version = "1.0.0a1" %}
+{% set version = "2.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/explosion/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 4e64cc3834c902087ca83a88568f0769974a2cc4cd63a31d45ae29c4d7bf8792
+  sha256: 0dcbad86d0148915234580ac619e42d8f59df320f0d30a59a805f6171de3d431
 
 build:
-  number: 2
+  number: 0
   skip: True  # [win and vc<14]
   script: "{{ PYTHON }} -m pip install . -vv "
 
@@ -19,20 +19,17 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   host:
-    - cymem >=2.0.2,<2.1.0
-    - murmurhash >=0.28.0,<1.1.0
     - pip
     - cython
-    - preshed >=2.0.1,<2.1.0
     - python
   run:
-    - cymem >=2.0.2,<2.1.0
-    - murmurhash >=0.28.0,<1.1.0
     - numpy >=1.15.0
-    - preshed >=2.0.1,<2.1.0
     - python
-    - srsly >=0.1.0,<1.1.0
-
+    - srsly >=2.4.0,<3.0.0
+    - spacy >=3.0.0, <4.0.0
+    - wasabi >=0.8.1, <1.1.0
+    - catalogue >=2.0.1, <2.1.0
+    - importlib_metadata >=0.20
 test:
   imports:
     - sense2vec
@@ -54,3 +51,4 @@ extra:
     - tata17
     - rluria14
     - oblute
+    - JennaLipscomb
