@@ -1,11 +1,11 @@
-About sense2vec
-===============
+About sense2vec-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sense2vec-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/explosion/sense2vec
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sense2vec-feedstock/blob/main/LICENSE.txt)
 
 Summary: word2vec with NLP-specific tokens
 
@@ -242,7 +242,6 @@ Feedstock Maintainers
 =====================
 
 * [@JennaLipscomb](https://github.com/JennaLipscomb/)
-* [@adbeda](https://github.com/adbeda/)
 * [@benhuff](https://github.com/benhuff/)
 * [@mxr-conda](https://github.com/mxr-conda/)
 * [@oblute](https://github.com/oblute/)
