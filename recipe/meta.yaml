@@ -11,7 +11,6 @@ source:
 
 build:
   number: 1
-  skip: True  # [win and vc<14]
   script: "{{ PYTHON }} -m pip install . -vv "
 
 requirements:
@@ -47,7 +46,6 @@ extra:
   recipe-maintainers:
     - mxr-conda
     - benhuff
-    - adbeda
     - tata17
     - rluria14
     - oblute
